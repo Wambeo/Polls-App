@@ -1,0 +1,104 @@
+/* 
+.poll{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #c9bbbb;
+    border-radius: 10px;
+    box-sizing: 0px 0px 20px 5px rgba(35, 30, 120, 0.05);
+}
+.poll .question{
+    padding: 20px;
+    color: #111;
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+}
+.poll .answers .answer{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    line-height: 40px;
+    color: #111;
+    margin-bottom: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.poll .answers .answer .selected{
+    border: 2px solid #8f9fe8;
+}
+.poll .answers .answer span.percentage-value{
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    width: 40px;
+    transform: translate(-50%);
+    color: #111;
+    font-size: 15px;
+}
+.poll .answers .answer span.percentage-bar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: #ccd8f1;
+    z-index: -1;
+    transition: width 380ms ease-in-out;
+} */
+#form{
+    width: 45%;
+    margin: auto;
+    display: block;
+    font-family: lato, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 2px;
+}
+h1{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 13em;
+    font-weight: bold;
+    cursor: pointer;
+}
+fieldset{
+    border-radius: 15px 15px 15px 15px;
+    background: url(https://images.unsplash.com/photo-1598802777393-751e5387ecd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHZvdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+label{
+    font-weight: bold;
+    display: inline-block;
+    margin: 2px;
+}
+input[type=date],[type=number],[type=text],[type=data]{
+    background: #fff;
+    border: 1px solid #0000;
+    border-radius: 2px;
+    border-width: 1px;
+    color: #36454b;
+    font-size: 14px;
+    margin: 12px 12px;
+    padding: 12px 12px;
+    display: inline-block;
+}
+input[type=radio].g{
+    margin-left: 35px;
+}
+input[type=submit]{
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: 24px;
+    margin: 12px 14px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+}

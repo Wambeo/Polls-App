@@ -1,0 +1,13 @@
+{
+    "polls": [
+            { 
+             "id": "1", 
+             "title": "Opinion Polls", 
+             "votes": 100 
+            },
+           { 
+            "id": "2", 
+            "title": "another title", 
+            "views": 200 }
+    ]
+  }
