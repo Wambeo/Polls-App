@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Polls App</title>
+        <link rel="icon" type="img/jpeg" href="./images/logo.jpeg"/>
         <link href="./style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />            
@@ -65,7 +66,7 @@
 
                     
           <!-- Landing Page -->
-          <div class="container mx-auto grid md:grid-cols-2 p-3 h-screen bg-white-200 my-3">
+          <div class="container mx-auto grid md:grid-cols-2 p-3 h-screen bg-white-100 my-3">
             <div class="flex items-center">
                <img src="./images/landing.jpeg" class="w-full" alt="Logo"/>
             </div>
@@ -83,8 +84,7 @@
             </div>
           </div>
           <!-- Take Poll -->
-          <div class="container mx-auto my-1 flex justify-center md:grid-cols-2 p-3 h-screen bg-gray-100 ">
-            
+          <div class="container  mx-auto grid w-full md:grid-cols-2  p-3 h-screen bg-gray-100 ">            
             <div>        
               <!-- <h1>Create a Poll</h1> -->
               <form id="form">
@@ -108,16 +108,16 @@
                   <input type="submit"  value="Create Poll">
               </form> 
             </div> 
-            <div id="update_container" class=" mx-3"></div>             
+            <div id="update_container" class="mx-3"></div>             
       
         </div>   
 
           </div>
           <!-- Add Polls -->
-          <div class="container mx-auto p-2 bg-gray-100 min-h-screen">
+          <div class="container mx-auto p-2 bg-white-100 min-h-screen">
             <h3 class="text-2xl font-bold mt-8 text-center text-green-600">Available Polls</h3>
         
-            <div id="cardsContainer" class="mt-6 px-auto grid md:grid-cols-3 gap-2">
+            <div id="cardsContainer" class="mt-6 mx-auto px-auto grid md:grid-cols-3 gap-2">
                     <!-- Append posts -->
             </div>
         
