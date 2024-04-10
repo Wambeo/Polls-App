@@ -67,7 +67,7 @@
           <!-- Landing Page -->
           <div class="container mx-auto grid md:grid-cols-2 p-3 h-screen bg-white-200 my-3">
             <div class="flex items-center">
-               <img src="./images/landing.jpeg" class="w-full" alt="Logo" />
+               <img src="./images/landing.jpeg" class="w-full" alt="Logo"/>
             </div>
             <div class="flex justify-center items-center">
                    <div>
@@ -83,41 +83,34 @@
             </div>
           </div>
           <!-- Take Poll -->
-          <div class="container mx-auto flex  md:grid-cols-2 p-3 h-screen bg-white-200 ">
-            <!-- <div class="poll">
-              <div class="question"></div>
-              <div class="answers"></div>
-            </div> --> 
-            <form action="main.html">
-              <fieldset>
-                  <legend><h1>Voting Management System</h1></legend>
+          <div class="container mx-auto my-1 flex justify-center md:grid-cols-2 p-3 h-screen bg-gray-100 ">
+            
+            <div>        
+              <!-- <h1>Create a Poll</h1> -->
+              <form id="form">
+                <h1>Create a Poll</h1>
+                <fieldset>
+                    <label for="company">Company Name:</label>&nbsp &nbsp
+                    <input  type="text" id="company" name="company"><br>
+                    
+                    <label for="question">Question:</label>&nbsp &nbsp
+                    <input  type="text" id="question" name="question" required><br>
+                    
+                    <label for="option1">Option 1:</label>&nbsp &nbsp
+                    <input  type="text" id="option1" name="option1" required><br>
+                    
+                    <label for="option2">Option 2:</label>&nbsp &nbsp
+                    <input type="text" id="option2" name="option2" required><br>                             
+
+                    <label for="deadline">Deadline:</label>&nbsp &nbsp
+                    <input  type="datetime-local" id="deadline" name="deadline"><br><br>
+                </fieldset>                
+                  <input type="submit"  value="Create Poll">
+              </form> 
+            </div> 
+            <div id="update_container" class=" mx-3"></div>             
       
-                  <label>Company Name:</label>&nbsp &nbsp
-                  <input type="text" name="name" placeholder="Enter Your Name" required><br><br>
-      
-                  <label>Your Name:</label>&nbsp &nbsp
-                  <input type="text" name="Father name" placeholder="Enter Your Name" required><br><br>
-                  
-                  <label>Deadline:</label>&nbsp &nbsp
-                  <input type="data" name="dob" placeholder="Deadline" required><br><br>
-      
-                  <label>Gender:</label>&nbsp &nbsp
-                  <input type="radio" name="gender" class="g"value="male">Male
-                  <input type="radio" name="gender" class="g"value="female">Female
-                  <br><br>
-      
-                  <label>Ticket Number:</label>&nbsp &nbsp
-                  <input type="number" name="cnic" placeholder="Select Your Ticket number"maxlength="15"><br><br>
-      
-                  <label>What's your favorite Language:</label>&nbsp &nbsp
-                      <select name="Language">
-                          <option value="Null"> Favourite Language?</option>
-                              <option value="PTI">ENG</option>
-                              <option value="PTI">KIS</option>                              
-                      </select><br>
-              </fieldset>
-              <input type="submit" name="submit" value="submit">
-          </div>       
+        </div>   
 
           </div>
           <!-- Add Polls -->

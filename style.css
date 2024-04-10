@@ -1,67 +1,16 @@
-/* 
-.poll{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: #c9bbbb;
-    border-radius: 10px;
-    box-sizing: 0px 0px 20px 5px rgba(35, 30, 120, 0.05);
-}
-.poll .question{
-    padding: 20px;
-    color: #111;
-    font-size: 18px;
-    border-bottom: 1px solid #000;
-}
-.poll .answers .answer{
-    position: relative;
-    width: 100%;
-    height: 40px;
-    padding: 0px 10px;
-    line-height: 40px;
-    color: #111;
-    margin-bottom: 10px;
-    border: 1px solid #d4d4d4;
-    border-radius: 10px;
-    cursor: pointer;
-    overflow: hidden;
-}
-.poll .answers .answer .selected{
-    border: 2px solid #8f9fe8;
-}
-.poll .answers .answer span.percentage-value{
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    width: 40px;
-    transform: translate(-50%);
-    color: #111;
-    font-size: 15px;
-}
-.poll .answers .answer span.percentage-bar{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 50%;
-    height: 100%;
-    background: #ccd8f1;
-    z-index: -1;
-    transition: width 380ms ease-in-out;
-} */
+
 #form{
     width: 45%;
     margin: auto;
     display: block;
     font-family: lato, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     border-radius: 2px;
 }
-h1{
+#container h1{
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     padding: 20px 13em;
     font-weight: bold;
     cursor: pointer;
@@ -70,14 +19,14 @@ fieldset{
     border-radius: 15px 15px 15px 15px;
     background: url("./images/Addvote.jpeg");
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 label{
     font-weight: bold;
     display: inline-block;
     margin: 2px;
 }
-input[type=date],[type=number],[type=text],[type=data]{
+input[type=date],[type=number],[type=text],[type=data],[type="datetime-local"]{
     background: #fff;
     border: 1px solid #0000;
     border-radius: 2px;
@@ -101,4 +50,10 @@ input[type=submit]{
     cursor: pointer;
     border: 1px solid black;
     border-radius: 5px;
+}
+form h1{
+    text-align: center;
+    font-size: 14px;    
+    margin-left: 50%;
+    
 }

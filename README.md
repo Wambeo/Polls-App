@@ -3,6 +3,12 @@
 #### **By Samuel Simiyu**
 ## Project Description
     Its a simple blog app
+    "User can:
+    - Create polls with question, options, and expiry date.
+    - Display all active polls, filter by category or popularity.
+    - Edit poll options or extend expiry dates.
+    - Remove polls from the platform.
+    -Search for polls"
 ## Setup/Installation Requirements
     - Download zip in the code section of github to your desired folder
     - Extract the files

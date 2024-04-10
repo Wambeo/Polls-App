@@ -1,13 +1,44 @@
 {
-    "polls": [
-            { 
-             "id": "1", 
-             "title": "Opinion Polls", 
-             "votes": 100 
-            },
-           { 
-            "id": "2", 
-            "title": "another title", 
-            "views": 200 }
-    ]
-  }
+  "polls": [
+    {
+      "id": "3",
+      "title": "Africkson Safaris",
+      "question": "what's your favorite destination?",
+      "deadline": "2024-04-23T16:41",
+      "option1": "Maasai Mara",
+      "option2": "Amboseli"
+    },
+    {
+      "id": "4807",
+      "title": "Amazon",
+      "question": "Do you enjoy our services?",
+      "deadline": "2024-04-22T17:16",
+      "option1": "Highly Unlikely",
+      "option2": "No"
+    },
+    {
+      "id": "6f5f",
+      "title": "Bidco",
+      "question": "Do you like our services?",
+      "deadline": "2024-04-30T18:09",
+      "option1": "Yes",
+      "option2": "No"
+    },
+    {
+      "id": "c6e5",
+      "title": "Bolt",
+      "question": "Do you like partying?",
+      "deadline": "2024-04-27T20:40",
+      "option1": "Yes",
+      "option2": "No"
+    },
+    {
+      "id": "9843",
+      "title": "Uber",
+      "question": "How was your ride today?",
+      "deadline": "2024-04-11T21:18",
+      "option1": "Good",
+      "option2": "Not good"
+    }
+  ]
+}
