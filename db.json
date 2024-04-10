@@ -39,6 +39,14 @@
       "deadline": "2024-04-11T21:18",
       "option1": "Good",
       "option2": "Not good"
+    },
+    {
+      "id": "e338",
+      "title": "Create Poll",
+      "question": "Do you think you've done the best?",
+      "deadline": "2024-04-24T00:19",
+      "option1": "Yes",
+      "option2": "No"
     }
   ]
 }
