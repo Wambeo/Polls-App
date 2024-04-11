@@ -1,4 +1,4 @@
-fetch("http://localhost:5000/polls")
+fetch("https://polls-app-0v6e.onrender.com/polls")
  .then((response)=>response.json())
  .then((polls)=>{
     
@@ -47,7 +47,7 @@ document.getElementById("form").addEventListener("submit", (event)=>{
   
   
     
-    fetch("http://localhost:5000/polls/", {
+    fetch("https://polls-app-0v6e.onrender.com/polls/", {
       method: "POST",
       headers:{"Content-Type": "application/json"},
       body: JSON.stringify({title: title, question: question, deadline: deadline, option1: first, option2: second})
@@ -64,7 +64,7 @@ document.getElementById("form").addEventListener("submit", (event)=>{
   function deletePost(id)
 
 {
-  fetch(`http://localhost:5000/polls/${id}`, {
+  fetch(`https://polls-app-0v6e.onrender.com/polls/${id}`, {
     method: "DELETE"
   })
   .then((data)=> data.json())
@@ -78,7 +78,7 @@ document.getElementById("form").addEventListener("submit", (event)=>{
 }
 function editPost(id)
 {
-  fetch(`http://localhost:5000/polls/${id}`)
+  fetch(`https://polls-app-0v6e.onrender.com/polls/${id}`)
   .then((data)=> data.json())
   .then((poll)=>{
      const update_container = document.getElementById("update_container")
@@ -125,7 +125,7 @@ function update_post(id){
   const first = document.getElementById("option1_update").value
   const second = document.getElementById("option2_update").value
         
-        fetch(`http://localhost:5000/polls/${id}`, {
+        fetch(`https://polls-app-0v6e.onrender.com/polls/${id}`, {
           method: "PATCH",
           headers:{"Content-Type": "application/json"},
           body: JSON.stringify({title: title, question: question, deadline: deadline, option1: first, option2: second})
@@ -141,6 +141,6 @@ function update_post(id){
 
 
 }
-fetch("http://localhost:5000/polls/")
+fetch("https://polls-app-0v6e.onrender.com/polls/")
  .then((res)=>res.json())
  .then()
