@@ -10,7 +10,7 @@
     },
     {
       "id": "3",
-      "title": "Bidco",
+      "title": "Biitwise",
       "question": "Do you like our services?",
       "deadline": "2024-04-30T18:09",
       "option1": "Yes",
@@ -34,7 +34,7 @@
     },
     {
       "id": "7",
-      "title": "Another Company",
+      "title": "Another Company to",
       "question": "What are you up to?",
       "deadline": "2024-04-24T08:02",
       "option1": "Something",

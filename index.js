@@ -47,7 +47,7 @@ document.getElementById("form").addEventListener("submit", (event)=>{
   
   
     
-    fetch("https://polls-app-0v6e.onrender.com/polls/", {
+    fetch("https://polls-app-0v6e.onrender.com/polls", {
       method: "POST",
       headers:{"Content-Type": "application/json"},
       body: JSON.stringify({title: title, question: question, deadline: deadline, option1: first, option2: second})
@@ -85,8 +85,7 @@ function editPost(id)
 
      update_container.innerHTML = `
      
-     <div>        
-                  
+     <div>                
                   <form id="form">
                   <h1>Update a Poll</h1>
                     <fieldset>
@@ -134,7 +133,7 @@ function update_post(id){
         .then((poll)=>{
 
           alert("Poll updated successfully")
-          // Swal.fire("Poll updated successfully!");
+         Swal.fire("Poll updated successfully!");
         })
 
 
