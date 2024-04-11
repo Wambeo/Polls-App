@@ -3,7 +3,7 @@ fetch("https://polls-app-0v6e.onrender.com/polls")
  .then((polls)=>{
     
   displayPosts(polls)
-  console.log(polls)
+  // console.log(polls)
  })
 
 function displayPosts(polls)
@@ -135,12 +135,38 @@ function update_post(id){
 
           alert("Poll updated successfully")
           // Swal.fire("Poll updated successfully!");
-        }).catch((error)=>{
-          console.log(error)
         })
 
 
 }
-fetch("https://polls-app-0v6e.onrender.com/polls/")
- .then((res)=>res.json())
- .then()
+
+
+const userCardTemplate = document.querySelector("[data-user-template]")
+const userCardContainer = document.getElementById("data-cards")
+const searchInput = document.querySelector("[data-search]")
+
+let users = []
+searchInput.addEventListener("input", (e) =>{
+  const value = e.target.value.toLowerCase()
+  users.forEach(user =>{
+    const isVisible = user.title.toLowerCase().includes(value) || user.question.toLowerCase().includes(value)
+    user.element.classList.toggle("hide", !isVisible)
+  })
+})
+
+
+fetch("https://polls-app-0v6e.onrender.com/polls")
+ .then((response)=>response.json())
+ .then(data =>{
+    users = data.map(user =>{   
+      const card = userCardTemplate.content.cloneNode(true).children[0]
+      const header = card.querySelector("[data-header]")
+      const body = card.querySelector("[data-body]")
+
+        header.textContent = `Company Name: ${user.title}`
+        body.textContent = `Question: ${user.question}`
+        userCardContainer.append(card)
+      return {title: user.title, question: user.question, element: card}
+     
+    })
+ })
