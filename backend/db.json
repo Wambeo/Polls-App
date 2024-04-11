@@ -1,0 +1,60 @@
+{
+  "polls": [
+    {
+      "id": "1",
+      "title": "Africkson Safaris",
+      "question": "what's your favorite destination?",
+      "deadline": "2024-04-23T16:41",
+      "option1": "Maasai Mara",
+      "option2": "Amboseli"
+    },
+    {
+      "id": "3",
+      "title": "Bidco",
+      "question": "Do you like our services?",
+      "deadline": "2024-04-30T18:09",
+      "option1": "Yes",
+      "option2": "No"
+    },
+    {
+      "id": "4",
+      "title": "Bolt",
+      "question": "Do you like partying?",
+      "deadline": "2024-04-27T20:40",
+      "option1": "Yes",
+      "option2": "No"
+    },
+    {
+      "id": "6",
+      "title": "Create Poll",
+      "question": "Do you think you've done the best?",
+      "deadline": "2024-04-26T14:19",
+      "option1": "Maybe",
+      "option2": "Maybe not."
+    },
+    {
+      "id": "7",
+      "title": "Another Company",
+      "question": "What are you up to?",
+      "deadline": "2024-04-24T08:02",
+      "option1": "Something",
+      "option2": "Nothing much"
+    },
+    {
+      "id": "8",
+      "title": "Uber eats",
+      "question": "Do you enjoy our services?",
+      "deadline": "2024-04-26T12:02",
+      "option1": "Yes",
+      "option2": "No"
+    },
+    {
+      "id": "9",
+      "title": "Uber eats",
+      "question": "what's your final destination?",
+      "deadline": "2024-04-26T22:13",
+      "option1": "Here",
+      "option2": "There"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/polls")
+fetch("http://localhost:5000/polls")
  .then((response)=>response.json())
  .then((polls)=>{
     
@@ -47,7 +47,7 @@ document.getElementById("form").addEventListener("submit", (event)=>{
   
   
     
-    fetch("http://localhost:3000/polls/", {
+    fetch("http://localhost:5000/polls/", {
       method: "POST",
       headers:{"Content-Type": "application/json"},
       body: JSON.stringify({title: title, question: question, deadline: deadline, option1: first, option2: second})
@@ -55,7 +55,8 @@ document.getElementById("form").addEventListener("submit", (event)=>{
     .then((data)=> data.json() )
     .then((response)=>{
   
-      alert("Post added successfully")
+      // alert("Poll added successfully")
+      Swal.fire("Poll added successfully!");
     })
   
   
@@ -63,20 +64,21 @@ document.getElementById("form").addEventListener("submit", (event)=>{
   function deletePost(id)
 
 {
-  fetch(`http://localhost:3000/polls/${id}`, {
+  fetch(`http://localhost:5000/polls/${id}`, {
     method: "DELETE"
   })
   .then((data)=> data.json())
   .then((polls)=>{
 
     displayPosts(polls)
-    alert("Post deleted successfully")
+    alert("Poll deleted successfully") 
+    Swal.fire("Poll deleted successfully!"); 
 
   })
 }
 function editPost(id)
 {
-  fetch(`http://localhost:3000/polls/${id}`)
+  fetch(`http://localhost:5000/polls/${id}`)
   .then((data)=> data.json())
   .then((poll)=>{
      const update_container = document.getElementById("update_container")
@@ -123,7 +125,7 @@ function update_post(id){
   const first = document.getElementById("option1_update").value
   const second = document.getElementById("option2_update").value
         
-        fetch(`http://localhost:3000/polls/${id}`, {
+        fetch(`http://localhost:5000/polls/${id}`, {
           method: "PATCH",
           headers:{"Content-Type": "application/json"},
           body: JSON.stringify({title: title, question: question, deadline: deadline, option1: first, option2: second})
@@ -131,13 +133,14 @@ function update_post(id){
         .then((data)=> data.json())
         .then((poll)=>{
 
-          alert("Post updated successfully")
+          alert("Poll updated successfully")
+          // Swal.fire("Poll updated successfully!");
         }).catch((error)=>{
           console.log(error)
         })
 
 
 }
-fetch("http://localhost:3000/polls/")
+fetch("http://localhost:5000/polls/")
  .then((res)=>res.json())
  .then()

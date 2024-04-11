@@ -3,7 +3,7 @@
 #### **By Samuel Simiyu**
 ## Project Description
     Its a simple blog app
-    "User can:
+    User can:
     - Create polls with question, options, and expiry date.
     - Display all active polls, filter by category or popularity.
     - Edit poll options or extend expiry dates.
