@@ -18,8 +18,8 @@
     - And your application is running.
        
 ## Live link
-Deployed Frontend can be accessed here [Blog](https://nextblog-k-koech.vercel.app/)  
-Deployed Backend can be accessed here [Blog](https://blog-javascript-7c8x.onrender.com)  
+Deployed Frontend can be accessed here [Blog](wambeo.github.io/Polls-App/)  
+Deployed Backend can be accessed here [Blog](https://polls-app-0v6e.onrender.com/)  
 
 
 ## Known Bugs
