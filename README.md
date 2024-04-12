@@ -23,7 +23,8 @@ Deployed Backend can be accessed here [Blog](https://polls-app-0v6e.onrender.com
 
 
 ## Known Bugs
-    The application images dissapears in heroku
+    Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'. When using 
+    the update button.
     Otherwise application works perfectly well, no bugs.
 
 ## Technologies used
