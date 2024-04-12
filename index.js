@@ -1,3 +1,4 @@
+// Fetch API to make a request to a JSON endpoint.
 fetch("https://polls-app-0v6e.onrender.com/polls")
  .then((response)=>response.json())
  .then((polls)=>{
@@ -5,7 +6,7 @@ fetch("https://polls-app-0v6e.onrender.com/polls")
   displayPosts(polls)
   // console.log(polls)
  })
-
+// function to display posts on the page
 function displayPosts(polls)
 {
 
@@ -21,7 +22,7 @@ function displayPosts(polls)
 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${poll.title}</h5>
 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">${poll.question}</p>
 <select name="Political">
-                    <option value="Null"> Choose Political Party</option>
+                    <option value="Null">${poll.question}</option>
                         <option value="${poll.option1}">${poll.option1}</option>
                         <option value="${poll.option2}">${poll.option2}</option>
                         
@@ -36,6 +37,7 @@ function displayPosts(polls)
   }
 
 }
+// Event listener for the form submit event. 
 document.getElementById("form").addEventListener("submit", (event)=>{
     event.preventDefault()
   
@@ -47,7 +49,7 @@ document.getElementById("form").addEventListener("submit", (event)=>{
   
   
     
-    fetch("https://polls-app-0v6e.onrender.com/polls", {
+    fetch("https://polls-app-1.onrender.com/polls", {
       method: "POST",
       headers:{"Content-Type": "application/json"},
       body: JSON.stringify({title: title, question: question, deadline: deadline, option1: first, option2: second})
@@ -61,6 +63,7 @@ document.getElementById("form").addEventListener("submit", (event)=>{
   
   
   })
+  // function to delete a poll from the database. 
   function deletePost(id)
 
 {
@@ -76,6 +79,7 @@ document.getElementById("form").addEventListener("submit", (event)=>{
 
   })
 }
+// function to edit a poll in the database. 
 function editPost(id)
 {
   fetch(`https://polls-app-0v6e.onrender.com/polls/${id}`)
@@ -85,7 +89,7 @@ function editPost(id)
 
      update_container.innerHTML = `
      
-     <div>                
+                  <div>  
                   <form id="form">
                   <h1>Update a Poll</h1>
                     <fieldset>
@@ -114,7 +118,7 @@ function editPost(id)
   })
 }
 
-// update poll
+// function that updates a poll in the database. 
 function update_post(id){
 
 
@@ -145,6 +149,7 @@ const userCardContainer = document.getElementById("data-cards")
 const searchInput = document.querySelector("[data-search]")
 
 let users = []
+// event listener for the search input that filters the list of users based on the input value. 
 searchInput.addEventListener("input", (e) =>{
   const value = e.target.value.toLowerCase()
   users.forEach(user =>{
@@ -169,3 +174,4 @@ fetch("https://polls-app-0v6e.onrender.com/polls")
      
     })
  })
+ 
