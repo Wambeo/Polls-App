@@ -18,7 +18,7 @@
     - And your application is running.
        
 ## Live link
-Deployed Frontend can be accessed here [Blog](wambeo.github.io/Polls-App/)  
+Deployed Frontend can be accessed here [Blog](https://wambeo.github.io/Polls-App/)  
 Deployed Backend can be accessed here [Blog](https://polls-app-0v6e.onrender.com/)  
 
 
